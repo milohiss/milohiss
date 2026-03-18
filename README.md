@@ -13,10 +13,10 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.0h | 3.8h | 9.2h | 9.2h |
+| User AI session hours | 0.2h | 4.0h | 9.4h | 9.4h |
 | AI worker hours | 0.0h | 0.0h | 0.0h | 0.0h |
-| AI concurrency hours | 0.0h | 4.0h | 9.8h | 9.8h |
-| Interactive sessions | 0 | 1 | 5 | 5 |
+| AI concurrency hours | 0.2h | 4.2h | 10.1h | 10.1h |
+| Interactive sessions | 1 | 2 | 6 | 6 |
 | Worker sessions | 0 | 0 | 0 | 0 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -37,7 +37,7 @@ Model savings are modest because ~0% of tokens are cache reads, where price diff
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **Total** | **0** | **0** | **0** | **0** | **$0.00** | **$0.00** | **$0.00** |
 
-_45.4M total tokens processed. 8.8% cache hit rate. $0.00 total saved ($0.00 caching + $0.00 model routing vs all-Opus).
+_45.5M total tokens processed. 8.8% cache hit rate. $0.00 total saved ($0.00 caching + $0.00 model routing vs all-Opus).
 Model savings are modest because ~8.8% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
@@ -48,5 +48,5 @@ Model savings are modest because ~8.8% of tokens are cache reads, where price di
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-18 22:36 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-18 23:36 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
