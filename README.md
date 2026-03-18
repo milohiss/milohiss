@@ -37,8 +37,8 @@ Model savings are modest because ~0% of tokens are cache reads, where price diff
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **Total** | **0** | **0** | **0** | **0** | **$0.00** | **$0.00** | **$0.00** |
 
-_44.3M total tokens processed. 9.1% cache hit rate. $0.00 total saved ($0.00 caching + $0.00 model routing vs all-Opus).
-Model savings are modest because ~9.1% of tokens are cache reads, where price differences between models are small._
+_45.4M total tokens processed. 8.8% cache hit rate. $0.00 total saved ($0.00 caching + $0.00 model routing vs all-Opus).
+Model savings are modest because ~8.8% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Connect
@@ -48,5 +48,5 @@ Model savings are modest because ~9.1% of tokens are cache reads, where price di
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-18 21:36 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-18 22:36 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
