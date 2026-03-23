@@ -27,14 +27,28 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| moonshotai/kimi-k2 | 2 | 69K | 102 | 0 | $0.21 | $0.00 | $1.05 |
-| **Total** | **2** | **69K** | **102** | **0** | **$0.21** | **$0.00** | **$1.05** |
+| anthropic/claude-sonnet-4.6 | 19 | 68K | 11K | 958K | $0.66 | $2.59 | $2.64 |
+| moonshotai/kimi-k2 | 9 | 101K | 562 | 190K | $0.37 | $0.00 | $1.85 |
+| **Total** | **28** | **170K** | **11K** | **1.1M** | **$1.03** | **$2.59** | **$4.49** |
 
-_69K total tokens processed. 0% cache hit rate._
+_1.3M total tokens processed. 86.3% cache hit rate._
 
-_$1.05 total saved ($0.00 caching + $1.05 model routing vs all-Opus)._
+_$7.08 total saved ($2.59 caching + $4.49 model routing vs all-Opus)._
 
-_Model savings are modest because ~0% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~86.3% of tokens are cache reads, where price differences between models are small._
+
+## AI Model Usage (all time)
+
+| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| anthropic/claude-sonnet-4.6 | 19 | 68K | 11K | 958K | $0.64 | $2.59 | $2.64 |
+| **Total** | **19** | **68K** | **11K** | **958K** | **$0.64** | **$2.59** | **$2.64** |
+
+_108.0M total tokens processed. 45.3% cache hit rate._
+
+_$5.23 total saved ($2.59 caching + $2.64 model routing vs all-Opus)._
+
+_Model savings are modest because ~45.3% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Connect
@@ -44,5 +58,5 @@ _Model savings are modest because ~0% of tokens are cache reads, where price dif
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-22 03:12 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-23 02:14 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
