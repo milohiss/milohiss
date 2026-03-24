@@ -44,7 +44,7 @@ _Model savings are modest because ~82.9% of tokens are cache reads, where price 
 | anthropic/claude-sonnet-4.6 | 21 | 137K | 11K | 1.0M | $0.87 | $2.77 | $3.56 |
 | **Total** | **21** | **137K** | **11K** | **1.0M** | **$0.87** | **$2.77** | **$3.56** |
 
-_110.5M total tokens processed. 45.9% cache hit rate._
+_110.6M total tokens processed. 45.9% cache hit rate._
 
 _$6.34 total saved ($2.77 caching + $3.56 model routing vs all-Opus)._
 
@@ -58,5 +58,5 @@ _Model savings are modest because ~45.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-24 21:17 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-24 22:18 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
