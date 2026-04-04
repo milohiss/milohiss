@@ -44,9 +44,9 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 2,297 | 3K | 807K | 294.6M | $502.59 | $3,977.82 | $0.00 |
-| claude-sonnet-4-6 | 2,088 | 2K | 617K | 110.3M | $42.36 | $297.94 | $169.50 |
+| claude-sonnet-4-6 | 2,089 | 2K | 617K | 110.3M | $42.36 | $297.94 | $169.50 |
 | anthropic/claude-sonnet-4.6 | 21 | 137K | 11K | 1.0M | $0.87 | $2.77 | $3.56 |
-| **Total** | **4,406** | **143K** | **1.4M** | **406.0M** | **$545.82** | **$4,278.53** | **$173.06** |
+| **Total** | **4,407** | **143K** | **1.4M** | **406.0M** | **$545.82** | **$4,278.53** | **$173.06** |
 
 _542.0M total tokens processed. 84.1% cache hit rate._
 
@@ -62,5 +62,5 @@ _Model savings are modest because ~84.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-04 01:58 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-04 02:58 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
