@@ -13,9 +13,9 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 5.9h | 39.9h | 58.3h | 58.3h |
+| User AI session hours | 6.5h | 40.5h | 58.9h | 58.9h |
 | AI worker hours | 0.0h | 0.0h | 0.0h | 0.0h |
-| AI concurrency hours | 7.0h | 50.2h | 71.7h | 71.7h |
+| AI concurrency hours | 7.6h | 50.8h | 72.3h | 72.3h |
 | Interactive sessions | 5 | 10 | 79 | 79 |
 | Worker sessions | 0 | 0 | 0 | 0 |
 
@@ -27,12 +27,12 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 6,193 | 9K | 2.5M | 782.5M | $2,441.28 | $10,565.10 | $0.00 |
+| claude-opus-4-6 | 6,194 | 9K | 2.5M | 782.5M | $2,441.28 | $10,565.10 | $0.00 |
 | claude-sonnet-4-6 | 10,546 | 10K | 3.4M | 596.8M | $289.19 | $1,611.55 | $921.85 |
 | claude-opus-4-5 | 120 | 2 | 46K | 10.6M | $21.83 | $143.12 | $0.00 |
 | moonshotai/kimi-k2 | 19 | 438K | 1K | 190K | $1.39 | $0.00 | $6.93 |
 | anthropic/claude-sonnet-4.6 | 21 | 137K | 11K | 1.0M | $0.89 | $2.77 | $3.56 |
-| **Total** | **16,899** | **596K** | **6.0M** | **1,391.2M** | **$2,754.58** | **$12,322.54** | **$932.35** |
+| **Total** | **16,900** | **596K** | **6.0M** | **1,391.2M** | **$2,754.58** | **$12,322.54** | **$932.35** |
 
 _1,471.0M total tokens processed. 94.6% cache hit rate._
 
@@ -44,10 +44,10 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 6,192 | 9K | 2.5M | 781.8M | $1,364.77 | $10,554.60 | $0.00 |
+| claude-opus-4-6 | 6,193 | 9K | 2.5M | 781.8M | $1,364.77 | $10,554.60 | $0.00 |
 | claude-sonnet-4-6 | 5,950 | 6K | 1.9M | 343.8M | $132.07 | $928.36 | $528.33 |
 | anthropic/claude-sonnet-4.6 | 21 | 137K | 11K | 1.0M | $0.87 | $2.77 | $3.56 |
-| **Total** | **12,163** | **153K** | **4.4M** | **1,126.6M** | **$1,497.71** | **$11,485.74** | **$531.90** |
+| **Total** | **12,164** | **153K** | **4.4M** | **1,126.6M** | **$1,497.71** | **$11,485.74** | **$531.90** |
 
 _1,310.5M total tokens processed. 89.8% cache hit rate._
 
@@ -63,5 +63,5 @@ _Model savings are modest because ~89.8% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-21 23:21 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-22 00:22 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
