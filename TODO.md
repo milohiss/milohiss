@@ -61,6 +61,43 @@ Project-specific tasks go in each project's own `TODO.md`. This file tracks cros
 
 - When adding tasks to any TODO, include relevant aidevops skills, tools, community skills (skills.sh), or apps that should be used or created for that task.
 
+## Ideas / Pipeline
+
+Business and SaaS concepts to explore. Not yet scoped or committed to.
+
+### Equipment Financing Fraud Registry
+
+**Concept:** A centralized platform where equipment financing lenders, banks, and funding companies can report and look up fraud -- both completed fraud and attempted fraud that was caught before funds were disbursed.
+
+**Problem:**
+- Equipment financing fraud costs lenders millions. When a fraudster is caught by one lender, there's no shared database -- so they move to the next lender and try again.
+- Lenders currently have no way to check if an applicant (individual or business) has a fraud history with other lenders.
+- New fraud tactics spread across the industry unchecked because lenders don't collaborate on intelligence.
+
+**Core features (initial thinking):**
+- Fraud report database: lenders submit reports on confirmed fraud and flagged/attempted fraud (with evidence classification)
+- Lookup by applicant name, business name, EIN/TIN, phone, email, address
+- Fraud tactic intelligence feed: anonymized patterns and methods so lenders can train underwriting teams
+- Tiered access: contributing members get full access, read-only tier for smaller lenders
+- Compliance layer: Fair Credit Reporting Act (FCRA), dispute resolution process, data accuracy requirements
+
+**Open questions:**
+- Legal structure: does this fall under FCRA as a consumer reporting agency? Likely yes for individuals, possibly different for business-only reports
+- Revenue model: SaaS subscription per lender? Per-lookup fees? Freemium with basic checks free?
+- Data verification: how to prevent weaponization (competitors filing false reports)? Require documentation/evidence with each submission?
+- Industry buy-in: would need a critical mass of lenders contributing to be useful. Chicken-and-egg problem.
+- Existing players: check if FICO, LexisNexis, or Equifax already offer something similar in the equipment financing vertical specifically
+
+**Potential differentiator:** Unlike general credit bureaus, this would be equipment-financing-specific, capturing the exact tactics used in this vertical (fake invoices, shell vendors, straw borrowers, duplicate collateral) and enabling real-time lender-to-lender collaboration rather than just passive reporting.
+
+**Next steps when ready:**
+- Research FCRA compliance requirements and whether a "fraud-only" registry has different rules than a full credit bureau
+- Survey 5-10 equipment financing companies to validate the pain point and willingness to contribute data
+- Check existing solutions: FICO Falcon, LexisNexis HPCC, Equipment Leasing and Finance Association (ELFA) resources
+- Rough wireframe of the lookup + reporting flow
+
+---
+
 ## Backlog
 
 - [ ] t003 feat: set up aidevops pulse for project repos — register all project repos in repos.json, enable pulse with throttling. Start conservative: one repo at a time, evening-only hours, auto-expire after 7 days. Expand as comfortable. #feature #automation ~2h logged:2026-04-01
