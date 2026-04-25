@@ -100,6 +100,99 @@ Business and SaaS concepts to explore. Not yet scoped or committed to.
 
 ## Backlog
 
+- [ ] t004 branding: animated Gmail logo for all businesses — create animated GIF logos, set as Gmail profile pictures. Moving logo stands out in inbox among static icons, improves open rates. Gmail holds 75% of US email market. See SOP below. Tools: CapCut (paid), ffmpeg, Python/Pillow, or ezgif.com. #branding #email #quick-win ~30m per business logged:2026-04-24
+  - [x] t004.1 FCBF — animated logo GIF created (pulse, swing, star versions) ~30m completed:2026-04-24
+  - [ ] t004.2 DSI Labels — animate logo, convert, set on Gmail account ~30m
+  - [ ] t004.3 Coin Directory — animate logo when branding is ready ~30m
+  - [ ] t004.4 E-Waste — animate logo when branding is ready ~30m
+
+### SOP: Animated Gmail Logo
+
+**Goal:** Create a looping animated GIF of your business logo and set it as the Gmail profile picture so your emails stand out in recipients' inboxes.
+
+**Requirements:**
+- Square logo (512x512 PNG). If you only have a wide/rectangular logo, add white padding to make it square using Preview: Tools > Adjust Size > uncheck "Scale proportionally" > set both dimensions equal.
+- Final GIF must be under 250KB for Gmail.
+
+**Method 1: CapCut (desktop, paid version)**
+
+1. Open CapCut desktop, create new project
+2. Set canvas to **1:1** (square) in the player/preview area ratio dropdown
+3. Import your square logo PNG, drag to timeline
+4. Set clip duration to **4 seconds**
+5. Select the logo on the timeline > **Animations** tab
+6. Use **Combo** or **Loop** animations only (NOT "In" or "Out" -- those fade from black)
+7. Good options: Shine, Sparkle, Breathe, Swing
+8. Preview to confirm logo is **visible the entire time** -- no black frames
+9. Export as MP4: 720p, 24fps, lowest bitrate, H.264
+10. Convert to GIF: `ffmpeg -i input.mp4 -vf "crop=min(iw\,ih):min(iw\,ih),scale=200:200,fps=10" -loop 0 output.gif`
+11. If no ffmpeg, use ezgif.com/video-to-gif (keep output under 250KB)
+
+**Method 2: Python/Pillow (no video editor needed)**
+
+Pulse animation (logo gently breathes in and out):
+
+```bash
+python3 -c "
+from PIL import Image
+import math
+logo = Image.open('your-logo-512x512.png').convert('RGBA')
+frames = []
+for i in range(18):
+    t = i / 18
+    scale = 0.95 + 0.05 * (0.5 + 0.5 * math.sin(2 * math.pi * t))
+    new_size = int(256 * scale)
+    resized = logo.resize((new_size, new_size), Image.LANCZOS)
+    frame = Image.new('RGBA', (256, 256), (255, 255, 255, 255))
+    offset = (256 - new_size) // 2
+    frame.paste(resized, (offset, offset), resized)
+    frames.append(frame.convert('RGB').quantize(colors=128))
+frames[0].save('output.gif', save_all=True, append_images=frames[1:], duration=111, loop=0, optimize=True)
+"
+```
+
+Swing animation (logo rocks side to side):
+
+```bash
+python3 -c "
+from PIL import Image
+import math
+logo = Image.open('your-logo-512x512.png').convert('RGBA')
+frames = []
+for i in range(24):
+    t = i / 24
+    angle = 8 * math.sin(2 * math.pi * t)
+    rotated = logo.resize((240, 240), Image.LANCZOS).rotate(angle, expand=False, fillcolor=(255, 255, 255, 0), resample=Image.BICUBIC)
+    frame = Image.new('RGBA', (300, 300), (255, 255, 255, 255))
+    offset_x = (300 - rotated.width) // 2
+    offset_y = (300 - rotated.height) // 2
+    frame.paste(rotated, (offset_x, offset_y), rotated)
+    frames.append(frame.convert('RGB').quantize(colors=128))
+frames[0].save('output.gif', save_all=True, append_images=frames[1:], duration=83, loop=0, optimize=True)
+"
+```
+
+**Method 3: Gemini Advanced ($20/month) with VEO3**
+
+1. Go to gemini.google.com (need Gemini Advanced subscription)
+2. Upload square logo
+3. Prompt: "Animate this business logo with a smooth, seamless looping animation. A subtle light shimmer sweeps across the logo. Clean white background. Professional, minimal motion. Seamless loop, 3 seconds, square format."
+4. Export MP4, convert to GIF via ffmpeg or ezgif.com
+
+**Setting the Gmail profile picture:**
+
+1. Go to myaccount.google.com on the business Gmail account
+2. Click profile picture > Change profile picture
+3. Upload the GIF
+4. Done -- every email you send now has a moving logo
+
+**Tips:**
+- Keep animations subtle and professional -- no flashy effects
+- The logo must be visible in every frame (no fade from black)
+- Test by sending yourself an email and checking how it looks in inbox
+- GIF must be under 250KB or Gmail won't accept it
+- Mac drag-and-drop works between machines via KVM switch for transferring files
+
 - [ ] t003 feat: set up aidevops pulse for project repos — register all project repos in repos.json, enable pulse with throttling. Start conservative: one repo at a time, evening-only hours, auto-expire after 7 days. Expand as comfortable. #feature #automation ~2h logged:2026-04-01
   - [ ] t003.1 Register repos in repos.json: fcbf-qualifier, fcbf-roi-calculator, milo-fcbf-bot (local_only), milohiss (profile) ~30m
   - [ ] t003.2 Run `aidevops init` on repos that need task tracking ~15m
