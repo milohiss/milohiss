@@ -10,6 +10,21 @@ Saved websites for layout ideas, color schemes, and design reference.
 
 <!-- Add new entries at the top -->
 
+### I Care Air Care
+- **URL:** https://www.icareaircare.com/
+- **Category:** landing-page, layout
+- **What I like:** Clean local service business layout. Built with Astro. Strong review integration (700+ Google reviews inline), clear service cards, prominent phone CTA, team photos, 3-step process section, FAQ accordion. Good example of a local service business site done right.
+- **For project:** E-Waste, Local Services, General
+- **Built with:** Astro
+- **Creator:** Will Hamilton (advise)
+
+### Nomads.com (formerly Nomad List)
+- **URL:** https://www.nomads.com
+- **Category:** layout, dashboard, ui-component
+- **What I like:** Directory-style layout with filterable grid/list/map views. Massive filter system with categories. Card-based city listings with scores, cost, internet speed. Dark mode. Data-rich without feeling cluttered. Good model for any directory site.
+- **For project:** Coin Shows, Local Services, General
+- **Built with:** Custom (by Pieter Levels)
+
 <!-- TEMPLATE:
 ### Site Name
 - **URL:** https://example.com
