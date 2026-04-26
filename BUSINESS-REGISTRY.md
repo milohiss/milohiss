@@ -125,6 +125,21 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 
 ---
 
+## Phone Number Research
+
+Options evaluated for business phone numbers (calls, SMS, GMB verification):
+
+| Provider | Type | Cost | Notes |
+|---|---|---|---|
+| **Twilio** | Direct | $1.15/mo per number + ~$0.01/min | Best for dev integration, pay-as-you-go, no contracts |
+| **GoHighLevel (GHL)** | All-in-one CRM/marketing | $100/mo plan + $2/mo per number | Twilio reseller built in. Overkill if already using Zoho CRM |
+| **MyTelfon** | Twilio reseller | _TODO: check pricing_ | mytelfon.com — recommended by community as a good reseller app |
+| **OpenCall** | Twilio reseller | _TODO: check pricing_ | Gone enterprise/sales-focused |
+
+**Decision:** Twilio direct is the best fit. Already have Zoho for CRM/campaigns — don't need GHL's duplication. Twilio numbers can port out to any provider later if needed.
+
+---
+
 ## Hardware
 
 | Device | Role | IP |
