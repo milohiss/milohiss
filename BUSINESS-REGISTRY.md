@@ -41,18 +41,21 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 
 | Item | Detail |
 |---|---|
-| **Website** | _TODO: fill in_ |
+| **Website** | dsiweb.com |
 | **Domain registrar** | _TODO: fill in_ |
 | **Domain purchased from** | _TODO: fill in_ |
 | **Domain expiry** | _TODO: fill in_ |
-| **Hosting provider** | _TODO: fill in_ |
+| **Hosting provider** | Hostinger (shared plan with E-Waste) |
+| **Hosting expiry** | _TODO: check when Hostinger plan expires_ |
+| **CMS** | WordPress + Elementor |
+| **Blog posts** | ~13 (on WordPress, not yet tracked in git) |
 | **Phone number** | _TODO: fill in_ |
 | **Phone provider** | _TODO: fill in_ |
 | **Email provider** | _TODO: fill in_ |
 | **CRM** | EspoCRM (local on M4: localhost:8080) |
 | **Google My Business** | _TODO: verified? Y/N_ |
 | **Social media** | _TODO: fill in_ |
-| **GitHub repos** | _TODO: fill in_ |
+| **GitHub repos** | milohiss/dsi-labels (private) |
 
 ---
 
@@ -82,7 +85,10 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **Domain registrar** | _TODO: fill in_ |
 | **Domain purchased from** | _TODO: fill in_ |
 | **Domain expiry** | _TODO: fill in_ |
-| **Hosting provider** | _TODO: fill in_ |
+| **Hosting provider** | Hostinger (shared plan with DSI Labels) |
+| **Hosting expiry** | _TODO: check when Hostinger plan expires_ |
+| **CMS** | WordPress (live site) + Astro (new site in git) |
+| **Blog posts** | ~20 (on WordPress, not yet tracked in git) |
 | **Phone number** | _TODO: fill in_ |
 | **Phone provider** | _TODO: fill in_ |
 | **Email provider** | _TODO: fill in_ |
