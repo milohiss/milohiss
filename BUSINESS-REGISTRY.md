@@ -156,6 +156,34 @@ Community recommendations for WordPress sites (FCBF, E-Waste, etc.):
 
 ---
 
+## Tools & Integration Notes
+
+### Screaming Frog + Claude Code Integration (future)
+
+**Status:** Not set up yet. Saving for future reference. Used as part of SEO blog engine process.
+
+**Requires:** Screaming Frog license (needed for CLI mode).
+
+**Setup steps (from community):**
+
+1. Alias the SF binary:
+```
+echo 'alias sf="/Applications/Screaming\ Frog\ SEO\ Spider.app/Contents/MacOS/ScreamingFrogSEOSpiderLauncher"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+2. Quit the SF GUI (it locks the DB)
+
+3. In Claude Code, tell it to run crawls via bash — e.g.: `claude "crawl example.com headless and export 4xx + missing titles"`
+
+4. Claude Code constructs the CLI command, runs it, reads the CSVs, and summarises findings.
+
+5. Optional: Create a SKILL.md at `~/.claude/skills/screaming-frog/` with client configs and standard export sets for repeatable crawls.
+
+**Key point:** Claude Code drives Screaming Frog via CLI/bash — no special integration needed, just the alias and a license.
+
+---
+
 ## Hardware
 
 | Device | Role | IP |
