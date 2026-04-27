@@ -140,6 +140,22 @@ Options evaluated for business phone numbers (calls, SMS, GMB verification):
 
 ---
 
+## WordPress Security / Anti-Malware
+
+Community recommendations for WordPress sites (FCBF, E-Waste, etc.):
+
+| Plugin/Service | Tier | Cost | Notes |
+|---|---|---|---|
+| **Wordfence** | SMB (recommended) | Free tier covers most sites | Best free option. Firewall + malware scan. Pair with Cloudflare free plan for 99% threat coverage |
+| **Really Simple SSL** | All | Free / Pro available | SSL + security headers. "Don't think you need anything else nowadays" |
+| **Cloudflare** | All | Free plan | DNS-level protection, CDN, DDoS mitigation. Use in front of Wordfence |
+| **Sucuri** | Enterprise | Expensive | Enterprise-grade. Overkill for SMB sites |
+| **SolidWP** | SMB (maintenance) | Paid | Good for SMBs on a maintenance plan |
+
+**Recommended stack for FCBF:** Wordfence (free) + Cloudflare (free) + Really Simple SSL. Covers security, SSL, CDN, and DDoS protection at zero cost.
+
+---
+
 ## Hardware
 
 | Device | Role | IP |
