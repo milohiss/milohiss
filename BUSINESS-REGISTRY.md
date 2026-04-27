@@ -159,9 +159,16 @@ Options evaluated for business phone numbers (calls, SMS, GMB verification):
 | **Hetzner** | VPS/cloud server provider (Germany/Finland) | ~$5-10/mo for a server |
 | **Cloudron** | Server management panel — one-click app installs (WordPress, EspoCRM, email, etc.), auto SSL, backups, updates | Free for 2 apps, $15/mo unlimited |
 
-**Why it could make sense:** One Hetzner server + Cloudron could replace Hostinger and host all WordPress sites, EspoCRM, email — everything in one place. Put Cloudflare (free) in front to offset EU server latency for US visitors.
+**Important: FCBF is a separate entity** — its hosting and expenses are independent from DSI/E-Waste. FCBF hosting stays wherever it is currently. Hetzner + Cloudron would be for DSI, E-Waste, EspoCRM, and other personal/shared projects.
 
-**Status:** Not set up yet. Recommendation only.
+**Hetzner + Cloudron plan (DSI / E-Waste / EspoCRM / future sites):**
+- Hetzner = VPS (the server hardware, ~$5-10/mo)
+- Cloudron = management panel that sits on top (app store + SSL + backups + email + updates)
+- Cloudflare = DNS/CDN in front (free, handles US latency from EU servers)
+- Would replace Hostinger for DSI/E-Waste and move EspoCRM off local M4 so it's accessible anywhere
+- DSI Hostinger expiry: _TODO: check when plan expires before migrating_
+
+**Status:** Not set up yet. Recommendation from Marcus (aidevops creator).
 
 ---
 
