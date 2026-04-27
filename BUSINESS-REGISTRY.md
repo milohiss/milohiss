@@ -140,6 +140,31 @@ Options evaluated for business phone numbers (calls, SMS, GMB verification):
 
 ---
 
+## Hosting Research
+
+**Current hosting:**
+
+| Site | Host | Notes |
+|---|---|---|
+| DSI Labels (dsiweb.com) | Hostinger | Existing plan |
+| ewastefreepickup.com | Hostinger (planned) | Add to existing DSI plan |
+| FCBF | _TODO: find out_ | WordPress + Elementor |
+| Coin Shows | GitHub Pages | Free, static Jekyll site |
+| EspoCRM | Local on M4 (localhost:8080) | Not hosted externally |
+
+**Recommended by Marcus (aidevops creator):**
+
+| Service | What it does | Cost |
+|---|---|---|
+| **Hetzner** | VPS/cloud server provider (Germany/Finland) | ~$5-10/mo for a server |
+| **Cloudron** | Server management panel — one-click app installs (WordPress, EspoCRM, email, etc.), auto SSL, backups, updates | Free for 2 apps, $15/mo unlimited |
+
+**Why it could make sense:** One Hetzner server + Cloudron could replace Hostinger and host all WordPress sites, EspoCRM, email — everything in one place. Put Cloudflare (free) in front to offset EU server latency for US visitors.
+
+**Status:** Not set up yet. Recommendation only.
+
+---
+
 ## WordPress Security / Anti-Malware
 
 Community recommendations for WordPress sites (FCBF, E-Waste, etc.):
