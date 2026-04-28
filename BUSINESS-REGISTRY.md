@@ -127,7 +127,7 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **GitHub (business)** | nezumitora (Nezumi Tora LLC — Coin Shows, E-Waste, Local Services) |
 | **GitHub (FCBF org)** | FCBF1996 |
 | **Hetzner** | nezumitorallc@gmail.com — Client #K0409787526. Server: ubuntu-8gb-hel1-1 (#128436616), IP: 204.168.137.38, CX33 (4 vCPU, 8GB, 80GB), Helsinki. Backups enabled. $20 promo credit (expires May 31, 2026). Monthly: $10.19/mo ($7.99 server + $0.60 IPv4 + $1.60 backups). Created 2026-04-28. |
-| **Cloudron** | _TODO: sign up via marcusquinn.com/link/cloudron_ — Server management panel. Starter plan 15 EUR/mo (~$16.20). Renewal: _TODO: fill after signup_ |
+| **Cloudron** | nezumitorallc@gmail.com — Server management panel. Starter plan 15 EUR/mo (~$16.20). Signed up 2026-04-28 via Marcus referral. Renewal: _TODO: fill in_ |
 | **Cloudflare** | _TODO: sign up_ — Free CDN/DNS for all Hetzner-hosted sites (required: server in EU, businesses in US) |
 | **Zoho** | _TODO: account email_ |
 | **EspoCRM** | Local on M4 Mac Mini (192.168.1.50:8080) — migrating to Hetzner+Cloudron |
