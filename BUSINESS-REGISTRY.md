@@ -31,6 +31,8 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | | FCBF1996/seo-blog-engine (fork) |
 | | FCBF1996/first-capital-lender-qualification (fork) |
 | | FCBF1996/fcbf-roi-calculator (fork) |
+| **Live chat** | Zoho SalesIQ (Milo + partner answer live, missed after hours) |
+| **Chat history** | Thousands of SalesIQ transcripts (years of qualifying conversations) |
 | **SEO plugin** | Rank Math Pro |
 | **Analytics** | _TODO: Google Analytics ID_ |
 | **Address** | 505 E 1st St D, Tustin, CA 92780 |
