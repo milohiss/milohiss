@@ -10,6 +10,16 @@ Saved websites for layout ideas, color schemes, and design reference.
 
 <!-- Add new entries at the top -->
 
+### Second Brain — Obsidian Graph View
+- **Source:** Instagram reel (BrainTutorial vault built with Claude Code)
+- **Category:** dashboard, ui-component
+- **What I like:** Every note is a dot, every link between notes is a line. Clusters form around related topics. You can see your whole knowledge base as an interactive map — zoom in on a cluster to explore, click a node to open it. This is the visual model for a "Brain" tab in the dashboard where businesses, ideas, contacts, and projects all connect.
+- **For project:** Dashboard, General
+- **Built with:** Obsidian (Graph View feature)
+- **Screenshots:** 
+  - ![graph-1](second-brain-graph-view-obsidian-1.png)
+  - ![graph-2](second-brain-graph-view-obsidian-2.jpeg)
+
 ### I Care Air Care
 - **URL:** https://www.icareaircare.com/
 - **Category:** landing-page, layout
