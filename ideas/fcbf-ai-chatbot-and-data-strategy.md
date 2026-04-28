@@ -64,10 +64,23 @@ The chat transcripts reveal:
 
 ## Data Export Plan
 
-- [ ] Export Zoho SalesIQ chat transcripts (check Zoho API or manual export)
-- [ ] Export Zoho CRM lead data (outcomes, which lender they went with)
+**Two export paths available (no SalesIQ API needed):**
+
+1. **Email copies** — every completed chat is emailed to Milo + partner. Bulk export from email inbox.
+2. **Zoho CRM PDFs (preferred)** — each lead record has a PDF copy of the chat attached. Zoho CRM API can pull lead records + attachments. This is better because chat + lead info + deal outcome are all connected (tells you what actually converts, not just how to talk).
+
+**Pipeline:**
+1. Export lead records + chat PDFs from Zoho CRM (API or bulk export)
+2. Convert PDFs to text (Claude can read PDFs directly)
+3. Analyze patterns — common questions, qualification criteria, conversion patterns
+4. Feed into chatbot training + verify qualifying engine
+
+**First step (free, do anytime):** Check how many lead records in Zoho CRM have chat PDFs attached — filter leads with attachments. That tells you the dataset size.
+
+- [ ] Check Zoho CRM lead count with chat PDF attachments
+- [ ] Export Zoho CRM lead data + chat PDFs
 - [ ] Audit qualifying engine accuracy against recent chat transcripts
-- [ ] Decide: Zoho SalesIQ bot vs custom chatbot vs third-party (Intercom, Drift, etc.)
+- [ ] Decide: Zoho SalesIQ Zobot vs custom chatbot vs third-party
 
 ## Priority
 

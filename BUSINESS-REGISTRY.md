@@ -33,6 +33,8 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | | FCBF1996/fcbf-roi-calculator (fork) |
 | **Live chat** | Zoho SalesIQ (Milo + partner answer live, missed after hours) |
 | **Chat history** | Thousands of SalesIQ transcripts (years of qualifying conversations) |
+| **Chat export paths** | 1) Email copies of every completed chat 2) PDF attached to each lead in Zoho CRM |
+| **Idea: AI chatbot** | After-hours chatbot trained on real chat data — see ideas/fcbf-ai-chatbot-and-data-strategy.md |
 | **SEO plugin** | Rank Math Pro |
 | **Analytics** | _TODO: Google Analytics ID_ |
 | **Address** | 505 E 1st St D, Tustin, CA 92780 |
