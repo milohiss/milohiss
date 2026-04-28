@@ -10,6 +10,15 @@ Saved websites for layout ideas, color schemes, and design reference.
 
 <!-- Add new entries at the top -->
 
+### WorkMatrixx (MAVIS)
+- **URL:** https://workmatrixx.com/
+- **Category:** landing-page, layout, color-scheme, dashboard
+- **What I like:** Dark mode SaaS landing page with teal/cyan accent. "Operations Graph" visualization showing connected workflows (Sales Follow-up, Inbox triage, CRM update, Calendar sync, Client support, Reporting) all flowing through a central hub. Feature cards with mini UI previews (inbox triage, lead follow-up sequences, calendar booking, CRM pipeline stages, client support escalation). Clean typography with bold italic headings. Very relevant — MAVIS is an AI operator that handles recurring business work across departments with human escalation. Similar concept to what we're building with the FCBF chatbot + EspoCRM automation.
+- **For project:** Dashboard, FCBF, General
+- **Screenshots:**
+  - ![hero](screenshots/workmatrixx-hero.png)
+  - ![features](screenshots/workmatrixx-features.png)
+
 ### Second Brain — Obsidian Graph View
 - **Source:** Instagram reel (BrainTutorial vault built with Claude Code)
 - **Category:** dashboard, ui-component
