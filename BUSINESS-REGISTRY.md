@@ -2,7 +2,7 @@
 
 Central tracking for all business domains, hosting, phone numbers, and services.
 
-**Last updated:** 2026-04-24
+**Last updated:** 2026-04-28
 
 ---
 
@@ -124,9 +124,13 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | Service | Account/Detail |
 |---|---|
 | **GitHub (personal)** | milohiss (private repos) |
+| **GitHub (business)** | nezumitora (Nezumi Tora LLC — Coin Shows, E-Waste, Local Services) |
 | **GitHub (FCBF org)** | FCBF1996 |
+| **Hetzner** | nezumitorallc@gmail.com — Cloud hosting (CX33 server planned). $20 promo credit (expires May 31, 2026). Signed up via Marcus referral. Monthly: ~$8.59/mo |
+| **Cloudron** | _TODO: sign up via marcusquinn.com/link/cloudron_ — Server management panel. Starter plan 15 EUR/mo (~$16.20). Renewal: _TODO: fill after signup_ |
+| **Cloudflare** | _TODO: sign up_ — Free CDN/DNS for all Hetzner-hosted sites (required: server in EU, businesses in US) |
 | **Zoho** | _TODO: account email_ |
-| **EspoCRM** | Local on M4 Mac Mini (192.168.1.50:8080) |
+| **EspoCRM** | Local on M4 Mac Mini (192.168.1.50:8080) — migrating to Hetzner+Cloudron |
 | **Telegram bot** | Milo FCBF Bot (milohiss/milo-fcbf-bot) |
 | **OpenRouter** | _TODO: account email (used by Milo bot)_ |
 | **Firecrawl** | _TODO: account email (free tier, 500 credits)_ |
@@ -172,13 +176,18 @@ Options evaluated for business phone numbers (calls, SMS, GMB verification):
 **Important: FCBF is a separate entity** — its hosting and expenses are independent from DSI/E-Waste. FCBF hosting stays wherever it is currently. Hetzner + Cloudron would be for DSI, E-Waste, EspoCRM, and other personal/shared projects.
 
 **Hetzner + Cloudron plan (DSI / E-Waste / EspoCRM / future sites):**
-- Hetzner = VPS (the server hardware, ~$5-10/mo)
-- Cloudron = management panel that sits on top (app store + SSL + backups + email + updates)
-- Cloudflare = DNS/CDN in front (free, handles US latency from EU servers)
+- Hetzner CX33 = VPS (4 vCPU Intel, 8GB RAM, 80GB SSD, $8.59/mo) — Germany or Finland location
+- Cloudron Starter = management panel (unlimited apps, 15 EUR/~$16.20/mo)
+- Cloudflare = DNS/CDN in front (free, required because server is EU but businesses are US-based)
+- Total: ~$24.79/mo for all sites, CRM, and email
 - Would replace Hostinger for DSI/E-Waste and move EspoCRM off local M4 so it's accessible anywhere
 - DSI Hostinger expiry: _TODO: check when plan expires before migrating_
 
-**Status:** Not set up yet. Recommendation from Marcus (aidevops creator).
+**Status:** Hetzner account created (2026-04-28). $20 promo credit active until May 31, 2026. Server not yet created. Cloudron not yet signed up.
+
+**Signup links (Marcus referral):**
+- Hetzner: marcusquinn.com/link/hetzner (used)
+- Cloudron: marcusquinn.com/link/cloudron (not yet used)
 
 ---
 
