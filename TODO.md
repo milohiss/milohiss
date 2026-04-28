@@ -8,13 +8,32 @@ Project-specific tasks go in each project's own `TODO.md`. This file tracks cros
 
 | Project | Status | Repo |
 |---------|--------|------|
-| First Capital Business Finance (FCBF) | Active | fcbf-qualifier, fcbf-roi-calculator |
-| DSI Labels | Active | TBD |
-| Coin Directory | Pipeline | TBD |
-| E-Waste | Pipeline | TBD |
+| First Capital Business Finance (FCBF) | Active | fcbf-qualifier, fcbf-roi-calculator, fcbf-newsletter |
+| DSI Labels | Active | dsi-labels |
+| Coin Directory | Active | coin-shows-near-me (nezumitora) |
+| E-Waste | Active | ewastefreepickup.com |
 | Milo FCBF Bot (Telegram) | Active | milo-fcbf-bot |
+| Business Dashboard | Active | business-dashboard |
+| EspoCRM Setup | Active | espocrm-setup |
+| Hosting (Hetzner + Cloudron) | Setting up | — |
 
 ## In Progress
+
+- [ ] t005 infra: set up Hetzner + Cloudron production hosting — Hetzner CX33 ($8.59/mo, Germany/Finland), Cloudron Starter (15 EUR/mo). Signup via Marcus's referral links: marcusquinn.com/link/hetzner, marcusquinn.com/link/cloudron. Server hosts: EspoCRM, WordPress (E-Waste, Local Services, Coin Shows, possibly DSI). #infrastructure #hosting #high-priority ~3h logged:2026-04-28
+  - [ ] t005.1 Sign up Hetzner via Marcus's link, create CX33 server (Germany or Finland location) ~15m
+  - [ ] t005.2 Install Cloudron on the Hetzner server ~30m
+  - [ ] t005.3 Install EspoCRM on Cloudron, migrate local config/data from M4 Docker ~1h
+  - [ ] t005.4 Install WordPress on Cloudron for E-Waste site ~30m
+  - [ ] t005.5 Set up Cloudron email for all businesses ~30m
+  - [ ] t005.6 Change EspoCRM admin credentials (currently admin/admin123) before going public ~5m
+
+- [ ] t006 infra: set up Cloudflare CDN for all Hetzner-hosted sites — server is in EU (Germany/Finland) but all businesses are US-based (Southern California). Cloudflare CDN required to fix latency for US visitors. Free plan. Point all domains through Cloudflare, enable proxy. aidevops has cloudflare-platform skill. #infrastructure #cloudflare #high-priority ~2h logged:2026-04-28
+  - [ ] t006.1 Create Cloudflare account (if not already) ~10m
+  - [ ] t006.2 Add E-Waste domain to Cloudflare, update nameservers, enable proxy ~20m
+  - [ ] t006.3 Add Coin Show domain to Cloudflare, update nameservers, enable proxy ~20m
+  - [ ] t006.4 Add Local Services domain to Cloudflare, update nameservers, enable proxy ~20m
+  - [ ] t006.5 Add DSI Labels domain to Cloudflare (if moving from Hostinger) ~20m
+  - [ ] t006.6 Verify all sites load fast from US locations ~15m
 
 - [ ] t001 feat: wire Claude into Telegram bot for natural language — add free-text handler to milo-fcbf-bot that sends messages to Claude via OAuth and returns plain English responses. Keeps slash commands as shortcuts. Admin-only. Uses Claude Max subscription (no extra cost). Involves: grammY text handler, Claude API integration, conversation context. #feature #telegram #high-priority ~4h logged:2026-04-01
 
