@@ -126,7 +126,7 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **GitHub (personal)** | milohiss (private repos) |
 | **GitHub (business)** | nezumitora (Nezumi Tora LLC — Coin Shows, E-Waste, Local Services) |
 | **GitHub (FCBF org)** | FCBF1996 |
-| **Hetzner** | nezumitorallc@gmail.com — Client #K0409787526. Server: ubuntu-8gb-hel1-1, IP: 204.168.137.38, CX33 (4 vCPU, 8GB, 80GB), Helsinki. $20 promo credit (expires May 31, 2026). Monthly: $8.59/mo ($7.99 server + $0.60 IPv4). Created 2026-04-28. |
+| **Hetzner** | nezumitorallc@gmail.com — Client #K0409787526. Server: ubuntu-8gb-hel1-1 (#128436616), IP: 204.168.137.38, CX33 (4 vCPU, 8GB, 80GB), Helsinki. Backups enabled. $20 promo credit (expires May 31, 2026). Monthly: $10.19/mo ($7.99 server + $0.60 IPv4 + $1.60 backups). Created 2026-04-28. |
 | **Cloudron** | _TODO: sign up via marcusquinn.com/link/cloudron_ — Server management panel. Starter plan 15 EUR/mo (~$16.20). Renewal: _TODO: fill after signup_ |
 | **Cloudflare** | _TODO: sign up_ — Free CDN/DNS for all Hetzner-hosted sites (required: server in EU, businesses in US) |
 | **Zoho** | _TODO: account email_ |
@@ -232,6 +232,53 @@ source ~/.zshrc
 5. Optional: Create a SKILL.md at `~/.claude/skills/screaming-frog/` with client configs and standard export sets for repeatable crawls.
 
 **Key point:** Claude Code drives Screaming Frog via CLI/bash — no special integration needed, just the alias and a license.
+
+---
+
+## Monthly Expenses
+
+**Last updated:** 2026-04-28
+
+### Nezumi Tora LLC (DSI, Coin Shows, E-Waste, Local Services)
+
+| Service | Cost/mo | Notes |
+|---|---|---|
+| Hetzner CX33 server | $7.99 | Helsinki, 4 vCPU, 8GB, 80GB |
+| Hetzner IPv4 | $0.60 | Required for public access |
+| Hetzner Backups | $1.60 | 20% of server cost, 7 backup slots |
+| Cloudron Starter | ~$16.20 | 15 EUR/mo, unlimited apps (not yet signed up) |
+| Hostinger | _TODO_ | DSI + E-Waste current hosting (check expiry) |
+| **Subtotal** | **~$26.39** | |
+
+### FCBF (separate entity — never mixed with above)
+
+| Service | Cost/mo | Notes |
+|---|---|---|
+| Website hosting | _TODO_ | WordPress + Elementor, find out provider |
+| Zoho CRM | _TODO_ | Check plan level |
+| Zoho SalesIQ | _TODO_ | Live chat |
+| Zoho Campaigns | _TODO_ | Email newsletters |
+| Domain renewal | _TODO_ | firstcapitalbusinessfinance.com |
+| **Subtotal** | **_TODO_** | |
+
+### Shared / Personal
+
+| Service | Cost/mo | Notes |
+|---|---|---|
+| GitHub | Free | milohiss + nezumitora accounts |
+| Cloudflare | Free | CDN/DNS (not yet signed up) |
+| Claude Max | _TODO_ | AI subscription |
+| OpenRouter | _TODO_ | Telegram bot LLM calls |
+| **Subtotal** | **_TODO_** | |
+
+### Total Monthly (all entities)
+
+| Entity | Subtotal |
+|---|---|
+| Nezumi Tora LLC | ~$26.39 |
+| FCBF | _TODO_ |
+| Shared/Personal | _TODO_ |
+| **Grand Total** | **_TODO_** |
 
 ---
 
