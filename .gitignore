@@ -1,0 +1,3 @@
+# Inter-agent inbox (transient messages)
+inbox/*.json
+inbox/processed/*.json
