@@ -10,6 +10,13 @@ Saved websites for layout ideas, color schemes, and design reference.
 
 <!-- Add new entries at the top -->
 
+### Gucci Monogram Pattern
+- **Source:** Reference image (gucci wallpaper)
+- **Category:** ui-component, color-scheme
+- **What I like:** Interlocking logo repeat pattern on tan/beige background with diamond grid lattice connecting the monograms. Classic luxury brand pattern. Use the buffalo nickel logo from Coin Show Near Me as a micro icon and create a similar repeating monogram pattern — could work as a subtle background texture, hero overlay, or section divider on the site.
+- **For project:** Coin Shows
+- **Screenshot:** ![gucci-pattern](screenshots/gucci-pattern-reference.jpg)
+
 ### WorkMatrixx (MAVIS)
 - **URL:** https://workmatrixx.com/
 - **Category:** landing-page, layout, color-scheme, dashboard
