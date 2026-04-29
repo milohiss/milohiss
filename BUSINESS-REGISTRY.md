@@ -56,7 +56,8 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **Phone number** | _TODO: fill in_ |
 | **Phone provider** | _TODO: fill in_ |
 | **Email provider** | _TODO: fill in_ |
-| **CRM** | EspoCRM (local on M4: localhost:8080) |
+| **CRM** | EspoCRM — Production: crm.cloud.ewastefreepickup.com / Local dev: M4 localhost:8080 |
+| **Lead Capture API** | `https://crm.cloud.ewastefreepickup.com/api/v1/LeadCapture/3d47da387741651eec0fb86366d9a986` |
 | **Google My Business** | _TODO: verified? Y/N_ |
 | **Social media** | _TODO: fill in_ |
 | **GitHub repos** | milohiss/dsi-labels (private) |
@@ -96,7 +97,7 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **Phone number** | _TODO: fill in_ |
 | **Phone provider** | _TODO: fill in_ |
 | **Email provider** | _TODO: fill in_ |
-| **CRM** | EspoCRM (local on M4: localhost:8080) |
+| **CRM** | EspoCRM — Production: crm.cloud.ewastefreepickup.com / Local dev: M4 localhost:8080 |
 | **Google My Business** | _TODO: verified? Y/N_ |
 | **Social media** | _TODO: fill in_ |
 | **GitHub repos** | milohiss/ewastefreepickup.com (private) |
@@ -130,7 +131,7 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **Cloudron** | nezumitorallc@gmail.com — Server management panel at my.cloud.ewastefreepickup.com. Starter plan 15 EUR/mo (~$16.20). Signed up 2026-04-28 via Marcus referral. Installed and running. Payment: Chase Business Preferred (Nezumi Tora). |
 | **Cloudflare** | nezumitorallc@gmail.com — Free plan. DNS/CDN for all domains. Nameservers: ken.ns.cloudflare.com, violet.ns.cloudflare.com. Signed up 2026-04-28. |
 | **Zoho** | _TODO: account email_ |
-| **EspoCRM** | Local on M4 Mac Mini (192.168.1.50:8080) — migrating to Hetzner+Cloudron |
+| **EspoCRM** | Production: crm.cloud.ewastefreepickup.com (Cloudron). Local dev: M4 Mac Mini (192.168.1.50:8080). Teams: DSI Labels, Coin Directory, E-Waste, Local Services. Configured 2026-04-28. |
 | **Telegram bot** | Milo FCBF Bot (milohiss/milo-fcbf-bot) |
 | **OpenRouter** | _TODO: account email (used by Milo bot)_ |
 | **Firecrawl** | _TODO: account email (free tier, 500 credits)_ |
