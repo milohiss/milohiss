@@ -126,9 +126,9 @@ Central tracking for all business domains, hosting, phone numbers, and services.
 | **GitHub (personal)** | milohiss (private repos) |
 | **GitHub (business)** | nezumitora (Nezumi Tora LLC — Coin Shows, E-Waste, Local Services) |
 | **GitHub (FCBF org)** | FCBF1996 |
-| **Hetzner** | nezumitorallc@gmail.com — Client #K0409787526. Server: ubuntu-8gb-hel1-1 (#128436616), IP: 204.168.137.38, CX33 (4 vCPU, 8GB, 80GB), Helsinki. Backups enabled. $20 promo credit (expires May 31, 2026). Monthly: $10.19/mo ($7.99 server + $0.60 IPv4 + $1.60 backups). Created 2026-04-28. |
-| **Cloudron** | nezumitorallc@gmail.com — Server management panel. Starter plan 15 EUR/mo (~$16.20). Signed up 2026-04-28 via Marcus referral. Renewal: _TODO: fill in_ |
-| **Cloudflare** | _TODO: sign up_ — Free CDN/DNS for all Hetzner-hosted sites (required: server in EU, businesses in US) |
+| **Hetzner** | nezumitorallc@gmail.com — Client #K0409787526. Server: ubuntu-8gb-hel1-1 (#128436616), IP: 204.168.137.38, CX33 (4 vCPU, 8GB, 80GB), Helsinki. Backups enabled. $20 promo credit (expires May 31, 2026). Monthly: $10.19/mo ($7.99 server + $0.60 IPv4 + $1.60 backups). Payment: Chase Business Preferred (Nezumi Tora). Created 2026-04-28. |
+| **Cloudron** | nezumitorallc@gmail.com — Server management panel at my.cloud.ewastefreepickup.com. Starter plan 15 EUR/mo (~$16.20). Signed up 2026-04-28 via Marcus referral. Installed and running. Payment: Chase Business Preferred (Nezumi Tora). |
+| **Cloudflare** | nezumitorallc@gmail.com — Free plan. DNS/CDN for all domains. Nameservers: ken.ns.cloudflare.com, violet.ns.cloudflare.com. Signed up 2026-04-28. |
 | **Zoho** | _TODO: account email_ |
 | **EspoCRM** | Local on M4 Mac Mini (192.168.1.50:8080) — migrating to Hetzner+Cloudron |
 | **Telegram bot** | Milo FCBF Bot (milohiss/milo-fcbf-bot) |
@@ -183,7 +183,7 @@ Options evaluated for business phone numbers (calls, SMS, GMB verification):
 - Would replace Hostinger for DSI/E-Waste and move EspoCRM off local M4 so it's accessible anywhere
 - DSI Hostinger expiry: _TODO: check when plan expires before migrating_
 
-**Status:** Hetzner account created (2026-04-28). $20 promo credit active until May 31, 2026. Server not yet created. Cloudron not yet signed up.
+**Status:** COMPLETE. Hetzner server running (2026-04-28), Cloudron installed and active at my.cloud.ewastefreepickup.com, Cloudflare DNS configured. Ready to install apps.
 
 **Signup links (Marcus referral):**
 - Hetzner: marcusquinn.com/link/hetzner (used)
@@ -246,7 +246,7 @@ source ~/.zshrc
 | Hetzner CX33 server | $7.99 | Helsinki, 4 vCPU, 8GB, 80GB |
 | Hetzner IPv4 | $0.60 | Required for public access |
 | Hetzner Backups | $1.60 | 20% of server cost, 7 backup slots |
-| Cloudron Starter | ~$16.20 | 15 EUR/mo, unlimited apps (not yet signed up) |
+| Cloudron Starter | ~$16.20 | 15 EUR/mo, unlimited apps. Payment: Chase Business Preferred |
 | Hostinger | _TODO_ | DSI + E-Waste current hosting (check expiry) |
 | **Subtotal** | **~$26.39** | |
 
@@ -266,7 +266,7 @@ source ~/.zshrc
 | Service | Cost/mo | Notes |
 |---|---|---|
 | GitHub | Free | milohiss + nezumitora accounts |
-| Cloudflare | Free | CDN/DNS (not yet signed up) |
+| Cloudflare | Free | CDN/DNS, active. nezumitorallc@gmail.com |
 | Claude Max | _TODO_ | AI subscription |
 | OpenRouter | _TODO_ | Telegram bot LLM calls |
 | **Subtotal** | **_TODO_** | |
