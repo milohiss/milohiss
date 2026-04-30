@@ -22,6 +22,8 @@ This ensures every repo can participate in the inter-agent messaging system.
 - Never expose personal name/nezumitora/milohiss on public sites
 - All new repos must be private unless stated otherwise
 - FCBF = separate entity from DSI/E-Waste — never mix expenses/accounts
+- **NEVER assume or guess dates, facts, or account details.** If you don't know, check the business dashboard data at `~/Git/business-dashboard/src/data/businesses.ts` or ASK the user. Wrong assumptions waste time and erode trust.
+- **When the user signs up for ANY service/site/app**, you MUST send an inbox message to the dashboard with: service name, signup date, account ID, login email (not password), cost, payment method, and any relevant notes. One message per service to `~/Git/business-dashboard/inbox/`.
 
 ## Screenshots and File Sharing (MANDATORY)
 
