@@ -109,7 +109,32 @@ Dashboard inbox: `~/Git/business-dashboard/inbox/`
 | EspoCRM | crm.cloud.ewastefreepickup.com | Included | |
 | Email | info@ewastefreepickup.com (Cloudron mail + Gmail relay) | $0 | |
 
-- **SSH:** `ssh -i ~/.ssh/hetzner_server root@204.168.137.38` (from Milo machine)
+- **SSH (AI agents):** `ssh -i ~/.ssh/hetzner_deploy deploy@204.168.137.38` — LIMITED access, WordPress only
+- **SSH (admin/root):** `ssh -i ~/.ssh/hetzner_server root@204.168.137.38` — manual admin only, NOT for AI agents
 - **CRM login:** Cloudron SSO at https://crm.cloud.ewastefreepickup.com (NOT admin/admin123)
 - **Payment:** Chase Business Preferred
 - **Port 25:** BLOCKED until ~May 28 (Hetzner requires 30 days). Using Gmail relay in the meantime.
+
+### Server Access Guardrails (May 2026)
+
+AI agents MUST use the `deploy` user, NEVER root. The deploy user can ONLY manage WordPress.
+
+**Allowed commands (via deploy user):**
+
+| Command | What it does |
+|---------|-------------|
+| `sudo wp-docker-exec wp <command> --allow-root` | Run WP-CLI commands (install themes, plugins, manage content) |
+| `sudo wp-docker-exec <command>` | Run any command inside the WP container |
+| `sudo wp-docker-logs --tail 50` | View WordPress container logs |
+| `sudo wp-docker-status` | Check if WP container is running |
+| `sudo wp-docker-restart` | Restart the WP container |
+
+**Blocked (deploy user CANNOT do any of these):**
+
+- Access CRM, email, or MySQL containers
+- Run raw `docker` commands
+- Modify server configs or Cloudron settings
+- Access `/etc/shadow`, other users' files, or system configs
+- `sudo su`, `sudo bash`, or any command not in the allowed list above
+
+**WordPress container ID:** `4866d47c-13e2-4088-b32b-f7ea86194af2` (hardcoded in wrapper scripts at `/usr/local/bin/wp-docker-*`). If Cloudron recreates the container (update, reinstall), the wrapper scripts on the server need updating with the new container ID.
